@@ -11,6 +11,7 @@ People with a background in ball games, and groups of those, covering all levels
 Authorities owning an sport facility for ball-games, with an interest of making money with it. Including private people with backyard fields, public instituations like schools and towns, sport facility businesses like tennis-centers. 
 
 ### What are their needs and wants?
+ss
 * Forming easilly a team inculding one or multiple chosen friends.
 * Finding an opponent with a similar skill level, in order for the play to be interesting
 * Easilly reserving a suitable sport-resource with distance possible for each of the players
