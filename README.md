@@ -39,7 +39,7 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 * Full size team gathering for your own team and opposite one currently done often by group chats and polls in variuous messaging apps. 
 * Possiblity to play with your chosen party, even if the amount of players is not equal to the size of opponent team.
 * Game difficulity even between the players.
-* Mental reassurance of randomly selected players at your own level.
+* Mental reassurance of randomly selected players at your own skill level, provided with profile pictures and short description of them.
 * Competitive games without any organisational fees.
 * Possibility to get harder opponents faster with winning, your own team is not holding you back.
 * Community feeling with meeting the same sport practisioners in local area, consisting of opposite and own team players that were assigned by the app.
@@ -104,6 +104,7 @@ Authorities owning an sport facility for ball-games, with an interest of making 
     2. Pricing until 
     3. Skill level range
   * automated billing when accepting matches 
+
 * Possiblitity to play different player-roles 
   * profile of which roles you can represent
 * Low supply of player-roles
@@ -124,6 +125,9 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 * Players declining from games in the search of a cheaper match
 * -||- closer location 
 * Affording the user possiblity to undestand the matchmaking process in real time.
+* the skill level curve dependent on following properties 
+  * culture
+  * cost of starting the sport 
 ### nonimportant problems and solutions
 
 ### nonimportant problems yet to be solved and categorized
