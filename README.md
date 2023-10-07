@@ -19,8 +19,7 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 * Finding an group with a similar skill level, in order for the play to be interesting but not scary.
 * Selecting a suitable time for the game, fitting all the players. 
 * Selecting sport-resource with distance possible for each of the players.
-* Having possibility for quality equipment rental at the sporting facility.
-* Knowledge of the sporting facility properties including showering possibilities, quality of the field, first-aid etc. 
+* Knowledge of the sporting facility properties including rental equipment, shower properties, quality of the field. 
 #### Resource
 * Bringing people new to sports as customers. 
 * Offering active users new opponents and local community of around the sport
@@ -40,7 +39,7 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 * Mental reassurance of randomly selected players at your own level.
 * Competitive games without any organisational fees.
 * Possibility to get harder opponents faster with winning, your own team is not holding you back.
-* Networking by meeting the same sport practisioners in local area, consisting of opposite and own team players that were assigned by the app.
+* Community feeling with meeting the same sport practisioners in local area, consisting of opposite and own team players that were assigned by the app.
 * Motivating and understandable ranking system based on your teams performances in games. 
 * Statistics about your score at different local area demografies.
 #### resource 
@@ -49,3 +48,54 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 * Online billing system.
 * Analythics about your resource usage, and value for customer compared to other local. 
 * tips based on data for when to build new resources and for which sport. 
+## Channels
+
+### How will you reach your target customers?
+### What distribution channels will you use?
+## Customer Relationships
+### What kind of customer relationships do you want to build?
+#### player 
+* Feeling that by playing you NHL style be a pro method, where there is a straight path to the top.
+* Finding the match should give you same goosebumbs as hours before a big game.
+* Winning a one should feel as good as winning with your own team.
+* 
+#### resource owner
+### How will you acquire and retain customers?
+## Revenue Streams
+### How will you generate revenue?
+* 10% add to the reservation fee that players make 
+### What are your pricing model and payment terms?
+* The app is free to use both for the sport resource owners and for the players 
+* After you have accepted a game suggestion, you cannot return your money
+* Your account be only billed after you have accepted the game, searching for a one does not affect.  
+## Key Resources
+### What resources do you need to implement your business model?
+### This could include physical resources (e.g., office space, equipment), human resources (e.g., employees, contractors), and financial resources.
+## Key Activities
+### What activities do you need to perform to deliver your value proposition? This could include product development, marketing and sales, and customer support.
+## Key Partnerships
+### What partnerships do you need to form to be successful? This could include partnerships with suppliers, distributors, and marketing partners.
+## Cost Structure
+### What are your costs? This could include variable costs (e.g., cost of goods sold) and fixed costs (e.g., rent, salaries).
+
+## How will you deal with cheaters and trollers 
+
+## How will you deal with no-goers 
+
+### solutions and problems yet to be categorized
+* Low advanced-intermediate player amount affect on the pool size and increased matchmaking time.
+  * Creating games with unequal team sizes giving more players to the noob ones.
+* Requiring minimum amount of choices from user
+  * Integrated scoreboard system
+  * Dynamic matchmaking looping following properties in stages 
+    * Distance from player
+    * Pricing until 
+    * Skill level range
+  * automated billing when accepting matches 
+* Automatical 
+
+### problems yet to be solved and categorized 
+* Players declining from games in the search of a cheaper match
+* -||- closer location 
+* Affording the user possiblity to undestand the matchmaking process in real time.
+* Person creating a party with a non signed up player.  
