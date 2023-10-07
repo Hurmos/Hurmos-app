@@ -109,14 +109,17 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 * Low supply of player-roles
   * Information about average waiting lines for each role
   * Discounted prices for games in very low demand roles
-* alkuun saattaa olla manuaalista 
 * Critical amount of players in the beginning
   * Calendar integrated queuing, suitable for people with routines
-  * ![A picture of the diagram](https://hs.mediadelivery.fi/img/658/11480d1de3a74e1dacef2a51fbe2e411.jpg.webp)
-
 ### Very important problems and solutions 
 
 ### Very important problems yet to be solved
+
+* How is the skill level signified to the player
+  * percentage of people you are expected to win 
+  * quantified named ranks without background understanding 
+  * numerical score between distinct values 
+  * quantified named ranks with background understanding
 ### important problems yet to be solved  
 * Players declining from games in the search of a cheaper match
 * -||- closer location 
