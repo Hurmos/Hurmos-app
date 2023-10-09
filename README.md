@@ -74,10 +74,10 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 ### How will you acquire and retain customers?
 ## Revenue Streams
 ### How will you generate revenue?
-* 10% add to the reservation fee for each player
+* 10% add to the reservation fee for each player on sport-resources that the resource owner has set a price.  Using Matchmaking will be free for sport-resources that do not have a pricing set by the owner. 
 ### What are your pricing model and payment terms?
 * The app is free to use both for the sport resource owners and for the players 
-* After you have accepted a game suggestion, you cannot return your money
+* After you have accepted a game suggestion, you cannot return your money.
 * Your account be only billed after you have accepted the game, searching for a one does not affect.  
 ## Key Resources
 ### What resources do you need to implement your business model? This could include physical resources (e.g., office space, equipment), human resources (e.g., employees, contractors), and financial resources.
@@ -140,4 +140,4 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 ### nonimportant problems and solutions
 
 ### nonimportant problems yet to be solved and categorized
-* Person creating a party with a non signed up player. 
+* Person creating a party with a non signed up player.  
