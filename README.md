@@ -8,7 +8,7 @@ sport team matching system with public ranking
 People with a interest in , and time for ball games, and groups of those, covering all levels from beginner to professional who want to play their favourite games in short notice on their free time.  
 
 #### Resource-owner role 
-Authorities owning an sport facility for ball-games, with an interest of making money with it. Including private people with backyard fields, public instituations like schools and towns, sport facility businesses like tennis-centers. 
+Authorities owning an sport facility for ball-games, with an interest of integrating usage system or making money with it. Including private people with backyard fields, public instituations like schools and towns, sport facility businesses like tennis-centers. 
 
 ### What are their needs and wants?
 #### Player 
@@ -29,8 +29,6 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 * Info about their business performance in local area, and business suggestions for action.  
 * Easy inventory management and maintainance
 * Customers who how to use the equipment 
-* Offer customers coaching services 
-
 ## Value propositions 
 
 ### What value do you offer your customers 
@@ -82,17 +80,28 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 * After you have accepted a game suggestion, you cannot return your money
 * Your account be only billed after you have accepted the game, searching for a one does not affect.  
 ## Key Resources
-### What resources do you need to implement your business model?
-### This could include physical resources (e.g., office space, equipment), human resources (e.g., employees, contractors), and financial resources.
-## Key Activities
+### What resources do you need to implement your business model? This could include physical resources (e.g., office space, equipment), human resources (e.g., employees, contractors), and financial resources.
+* Tech lead 
+* List of private sport-resources and access to their invidual booking calendar
+* Small amount of funding to hold until revenue from booked games can hold the system together  
+
+# Key Activities
 ### What activities do you need to perform to deliver your value proposition? This could include product development, marketing and sales, and customer support.
+* product development  
 ## Key Partnerships
 ### What partnerships do you need to form to be successful? This could include partnerships with suppliers, distributors, and marketing partners.
+* Partnership with resource-owners for access to their properties reservation data 
 ## Cost Structure
 ### What are your costs? This could include variable costs (e.g., cost of goods sold) and fixed costs (e.g., rent, salaries).
+* Salaries of the employees 
+* Rewarding the community 
+* Cloud computing  
 ## How will you deal with cheaters and trollers 
 
 ## How will you deal with no-goers 
+* Ban with growing length from the service depending on times of no-goes
+* Support from "game starting very soon" search option for player 
+* Default-off notification for inactive currently nearby .  
 
 ### solutions and problems yet to be finalized and categorized
 * Low advanced-intermediate player amount affect on the pool size and increased matchmaking time.
@@ -131,4 +140,4 @@ Authorities owning an sport facility for ball-games, with an interest of making 
 ### nonimportant problems and solutions
 
 ### nonimportant problems yet to be solved and categorized
-* Person creating a party with a non signed up player.  
+* Person creating a party with a non signed up player. 
