@@ -1,5 +1,13 @@
 # Hurmos-app
-sport team matching system with public ranking 
+## introduction
+Hurmos is a ball game matchmaking system with a public ranking, for all skill levels, designed with the resource owner first principle. The initial goal is to provide a league game experience for racket sports with 2-4 players using private facilities, and stick games (basketball, football, ice hockey) using public fields.
+
+Hurmos automates player matching, considering distance from nearest facilities, skill level, and the player's share of the field reservation fee. It suggests matches based on user data, player availability, and real-time resource information. Accepted matches result in automatic billing and funds transferred to the resource owner. Players find local matches starting within hours or based on user set weekly exercising patterns. Skill level matching uses a 1-1000 ranking system, adjusting as players improve. Newcomers can choose a non-ranking game mode.
+
+The app generates revenue through a 10% fee added to the sport-field reservation fee paid by players. There are no fees charged to sport resources using the platform. Additionally, the app provides a free reservation system for resource owners. This system allows reception employees to input reservations made via phone or in-person, linking them to the app for resource-specific reservation time data. Hurmos uses data on local sport-resource supply and player growth to suggest the optimal resources and quantities for you to offer, maximizing your income.
+
+To expand both your user base and the app, I need your insights on your current system and your vision for the app's functionality. Please reach out through my contact details and schedule meetings using the provided calendar links. If interested, you can also join our early test resource owners once the first product version is ready. Your input is invaluable.
+
 ## Customer segments
 
 ### Who are your target customers?
