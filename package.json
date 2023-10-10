@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "name": "hurmos-app",
+  "description": "A sport matchmaking system using players online-calendars.",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "googleapis": "^126.0.1"
+  }
+}
