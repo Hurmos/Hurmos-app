@@ -1,29 +1,31 @@
 # Hurmos-app
+
+## tldr
+A sport matchmaking system using players online-calendars. 
+
 ## introduction
-Hurmos is a ball game matchmaking system with a public ranking, for all skill levels, designed with the resource owner first principle. The initial goal is to provide a league game experience for racket sports with 2-4 players using private facilities, and stick games (basketball, football, ice hockey) using public fields.
+The goal is to provide a league game experience for racket sports and stick games (badminton, tennis, basketball, football, ice hockey) with 2-22 players using private and public sport-resources.
 
-Hurmos automates player matching, considering distance from nearest facilities, skill level, and the player's share of the field reservation fee. It suggests matches based on user data, player availability, and real-time resource information. Accepted matches result in automatic billing and funds transferred to the resource owner. Players find local matches starting within hours or based on user set weekly exercising patterns. Skill level matching uses a 1-1000 ranking system, adjusting as players improve. Newcomers can choose a non-ranking game mode.
+Hurmos uses user-calendar connected to the app-backend, to suggest sport-game matches at nearby sport-resources using users favorite sports, and skill level, at empty calendar slots. Matchmaking works by using the pool of other players available at the times the user could play, the user distance from nearest sport-resources and skill level. 
 
-The app generates revenue through a 10% fee added to the sport-field reservation fee paid by players. There are no fees charged to sport resources using the platform. Additionally, the app provides a free reservation system for resource owners. This system allows reception employees to input reservations made via phone or in-person, linking them to the app for resource-specific reservation time data. Hurmos uses data on local sport-resource supply and player growth to suggest the optimal resources and quantities for you to offer, maximizing your income.
+For sport-facility owner it provides possiblity to list their resources to be used in the matchmaking. It suggests matches for players at these sport-facilities using real-time resource information. Accepted matches results billing the players cut of the sport-field rent, and afterwards funds will be transferred to the resource owner.
 
-To expand both your user base and the app, I need your insights on your current system and your vision for the app's functionality. Please reach out through my contact details and schedule meetings using the provided calendar links. If interested, you can also join our early test resource owners once the first product version is ready. Your input is invaluable.
+The app generates revenue only through a 10% fee added to the sport-field reservation fee paid by players. Additionally, the app provides a free reservation system for resource owners. This system allows reception employees to input reservations made via phone or in-person, linking them to the app for resource-specific reservation time data. 
 
 ## Customer segments
 
 ### Who are your target customers?
-
 #### Player-role
-People with a interest in , and time for ball games, and groups of those, covering all levels from beginner to professional who want to play their favourite games in short notice on their free time.  
-
+* currently non club-member players of ball-games, who are semi-active or have history with some of the sports 
 #### Resource-owner role 
-Authorities owning an sport facility for ball-games, with an interest of integrating usage system or making money with it. Including private people with backyard fields, public instituations like schools and towns, sport facility businesses like tennis-centers. 
+Authorities owning an sport facility for ball-games, with an interest of integrating usage system and if wanted, making money with it. Including public instituations like schools and towns, sport facility businesses like tennis-centers. 
 
 ### What are their needs and wants?
 #### Player 
 * Less intemidating way of starting a new sport than belonging to a club.
 * Play matches without weekly practises. 
 * Playing with cheper price compared to belonging to a club. 
-* Having a game without perfect amount of players for the sport. 
+* Organazing games without big enough amount of players for the sport. 
 * Finding an group with a similar skill level, in order for the play to be interesting but not scary.
 * Selecting a suitable time for the game, fitting all the players. 
 * Selecting sport-resource with distance possible for each of the players.
@@ -47,16 +49,12 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 * Game difficulity even between the players.
 * Mental reassurance of randomly selected players at your own skill level, provided with profile pictures and short description of them.
 * Competitive games without any organisational fees.
-* Possibility to get harder opponents faster with winning, your own team is not holding you back.
-* Community feeling with meeting the same sport practisioners in local area, consisting of opposite and own team players that were assigned by the app.
-* Motivating and understandable ranking system based on your teams performances in games. 
-* Statistics about your score at different local area demografies.
+* Possibility to get harder opponents when improving.
+* Community feeling with meeting the same sport practisioners in local area, consisting of opposite and own team players that were assigned by the app. 
 #### resource 
-* New customer base consisting of beginner and intermediate players.
-* Automatically updating reservation calendar system, with possiblity to manually insert reservations.
-* Online billing system.
-* Analythics about your resource usage, and value for customer compared to other local. 
-* tips based on data for when to build new resources and for which sport. 
+* New customer base consisting of inactive beginner and intermediate players.
+* Automatically updating reservation calendar system from bookings through the app, with possiblity to manually insert reservations.
+* Online billing system that transfers the reservations made through the service.
 ## Channels
 
 ### How will you reach your target customers?
@@ -64,15 +62,12 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 #### Resources
 
 #### Players 
-
-## Customer Relationships
+* University channels
+* ## Customer Relationships
 ### What kind of customer relationships do you want to build?
 #### player 
-* Feeling that by playing you NHL style be a pro method, where there is a straight path to the top.
-* Finding the match should give you same goosebumbs as hours before a big game.
-* Winning alone should feel as good as winning with your own team.
-* Deep trust to the platform which provides safe experiences.
-* Image of not an replacement for regular clubs, but a own ecosystem.   
+* Joining the competitive part of the system should be better that belonging to a club. Finding the each competitive match should give you same goosebumbs as hours before a big game, and winning alone should feel as good as winning with your own team.
+* Starting as noobie, being an chill-player, they have a deep trust to the platform that provides safe experiences with exersicing.   
 #### resource owner
 * Happy initial reaction of the product.
 * Interest usign the product to grow business, not stay alive.
@@ -90,30 +85,38 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 ## Key Resources
 ### What resources do you need to implement your business model? This could include physical resources (e.g., office space, equipment), human resources (e.g., employees, contractors), and financial resources.
 * Tech lead 
-* List of private sport-resources and access to their invidual booking calendar
-* Small amount of funding to hold until revenue from booked games can hold the system together  
-
+* List of private sport-resources and access to field-specific booking calendar
+* Small amount of funding to hold until revenue from booked games can hold the system together   
+### How are you going to get these resources 
+* Tech lead 
+  * Networks from succesfull MVP 
+  * Networking in the Aalto gamer and Aaltoes communties 
+* List of private sport-resources and access to field-specific booking calendar
+  * sport-resources-companies need to get more customers through the platform 
+  * public-sport-resources need for organizing the field reservations
 # Key Activities
 ### What activities do you need to perform to deliver your value proposition? This could include product development, marketing and sales, and customer support.
-* product development  
+* product development 
+* design and customer-data team 
 ## Key Partnerships
 ### What partnerships do you need to form to be successful? This could include partnerships with suppliers, distributors, and marketing partners.
 * Partnership with resource-owners for access to their properties reservation data 
 ## Cost Structure
 ### What are your costs? This could include variable costs (e.g., cost of goods sold) and fixed costs (e.g., rent, salaries).
 * Salaries of the employees 
-* Rewarding the community 
+* Rewarding the open-source community 
 * Cloud computing  
 ## How will you deal with cheaters and trollers 
-
+* Authentication to the platform is needed
+* short-ban from platform
 ## How will you deal with no-goers 
 * Ban with growing length from the service depending on times of no-goes
-* Support from "game starting very soon" search option for player 
-* Default-off notification for inactive currently nearby .  
+* Support from "game starting very soon" search option for players, in order to save the game
+* Default-off notification for inactive players currently nearby.  
 
 ### solutions and problems yet to be finalized and categorized
 * Low advanced-intermediate player amount affect on the pool size and increased matchmaking time.
-  * Creating games with unequal team sizes giving more players to the noob ones.
+  * Creating games with unequal team sizes with noob side having few players more.
 * Requiring minimum amount of choices from the player
   * Integrated scoreboard system for skill-level approximation
   * Dynamic matchmaking looping following properties in stages 
@@ -121,11 +124,9 @@ Authorities owning an sport facility for ball-games, with an interest of integra
     2. Pricing until 
     3. Skill level range
   * automated billing when accepting matches 
-
 * Possiblitity to play different player-roles 
   * profile of which roles you can represent
 * Low supply of player-roles
-  * Information about average waiting lines for each role
   * Discounted prices for games in very low demand roles
 * Critical amount of players in the beginning
   * Calendar integrated queuing, suitable for people with routines
@@ -134,18 +135,23 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 ### Very important problems yet to be solved
 
 * How is the skill level signified to the player
-  * percentage of people you are expected to win 
-  * quantified named ranks without background understanding 
-  * numerical score between distinct values 
-  * quantified named ranks with background understanding
+  * percentage of people you are expected to win, like "you win 88% of the players in Helsinki" 
+  * quantified named ranks without user background understanding of the system, like [counterstrike] (https://dmarket.com/blog/csgo-ranks/) silver 1 - Global elite 
+  * numerical score between distinct values like range 1-1000 
+  * quantified named ranks with background understanding, like [Elo model](https://en.wikipedia.org/wiki/Elo_rating_system) ranging from 1-1000
 ### important problems yet to be solved  
 * Players declining from games in the search of a cheaper match
+  1. Offering use of public fields which is free
 * -||- closer location 
-* Affording the user possiblity to undestand the matchmaking process in real time.
-* the skill level curve dependent on following properties 
-  * culture
-  * cost of starting the sport 
+* Giving the user possiblity to understand the matchmaking process in real time.
+* How the skill level curve of sport inside a population dependens on culture and cost of starting the sport effect. 
 ### nonimportant problems and solutions
 
 ### nonimportant problems yet to be solved and categorized
 * Person creating a party with a non signed up player.  
+
+### Additional functionalities
+* Using data on local sport-resource supply and player growth to suggest the optimal resources and quantities for you to offer, maximizing your income.
+* Real time queueing for matches
+* Information about average waiting lines for each role
+* tips based on data for when to build new resources and for which sport. 
