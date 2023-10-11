@@ -63,7 +63,7 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 
 #### Players 
 * University channels
-* ## Customer Relationships
+## Customer Relationships
 ### What kind of customer relationships do you want to build?
 #### player 
 * Joining the competitive part of the system should be better that belonging to a club. Finding the each competitive match should give you same goosebumbs as hours before a big game, and winning alone should feel as good as winning with your own team.
@@ -94,7 +94,7 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 * List of private sport-resources and access to field-specific booking calendar
   * sport-resources-companies need to get more customers through the platform 
   * public-sport-resources need for organizing the field reservations
-# Key Activities
+## Key Activities
 ### What activities do you need to perform to deliver your value proposition? This could include product development, marketing and sales, and customer support.
 * product development 
 * design and customer-data team 
@@ -114,6 +114,7 @@ Authorities owning an sport facility for ball-games, with an interest of integra
 * Support from "game starting very soon" search option for players, in order to save the game
 * Default-off notification for inactive players currently nearby.  
 
+## Solutions to problems
 ### solutions and problems yet to be finalized and categorized
 * Low advanced-intermediate player amount affect on the pool size and increased matchmaking time.
   * Creating games with unequal team sizes with noob side having few players more.
