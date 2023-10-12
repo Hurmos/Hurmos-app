@@ -23,8 +23,6 @@
 5. **Matchmaking Integration:**
    - Integrate with OpenMatch or your chosen matchmaking tool.
    - Implement a matchmaking algorithm that considers skill levels and availability.
-   - Automatically create badminton game events based on matches.
-
 6. **Event Creation and RSVP:**
    <!-- - Enable users to create their own badminton game events. -->
    <!-- - Allow users to invite others and set event details. -->

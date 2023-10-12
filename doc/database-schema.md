@@ -1,10 +1,8 @@
-
-To create a database schema for the Hurmos-app project, we'll need several tables to store information about players, sport resources, reservations, matches, and more. Below is a simplified database schema that you can use as a starting point. Note that you may need to expand and refine this schema based on the actual requirements and functionalities of your application.
+For the Hurmos-app to work, we need database to hold information for the usage of the matchmaking tool, calendar game-event details like participants, and business-analythics. In the beginning, we will provide only the matchmaking possibility using user-data, playerProfile-data, sport-data, and calendar data. By combining that data, we can create information about a player in the queue for the matchmaking tool. After a match is created, we will inform the participants about it, and store the data in a matches table, to which we update the information about the participants as they provide "yes" and "no" calls. Note that you may need to expand and refine this schema based on the actual requirements and functionalities of your application.
 
 ## Users Table:
-* user_id (Primary Key)
+* email (Primary Key)
 * username
-* email
 * password
 * role (Player or Resource Owner)
 * home-location

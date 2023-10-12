@@ -1,0 +1,125 @@
+CREATE TABLE Users (
+    user_id NUMERIC NOT NULL,
+    username STRING(MAX) NOT NULL,
+    email STRING(MAX) NOT NULL,
+    password STRING(MAX) NOT NULL,
+    role STRING(MAX) NOT NULL,
+    home_location STRING(MAX),
+) PRIMARY KEY(used_id);
+
+CREATE TABLE PlayerProfile (
+    profile_id NUMERIC NOT NULL,
+    user_id STRING(MAX) NOT NULL,
+    skill_level NUMERIC,
+    allowed_skill_range NUMERIC,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+) PRIMARY KEY (profile_id);
+
+-- CREATE TABLE ResourceOwners (
+--     owner_id NUMERIC NOT NULL,
+--     user_id NUMERIC NOT NULL,
+--     business_name STRING(MAX),
+--     FOREIGN KEY (user_id) REFERENCES Users(user_id)
+-- ) PRIMARY KEY(owner_id);
+
+-- CREATE TABLE SportResources (
+--     resource_id NUMERIC NOT NULL,
+--     owner_id NUMERIC NOT NULL,
+--     name STRING(MAX) NOT NULL,
+--     location STRING(MAX),
+--     price STRING(MAX),
+--     -- Other resource-related information fields here
+--     FOREIGN KEY (owner_id) REFERENCES ResourceOwners(owner_id)
+-- ) PRIMARY KEY(resource_id)
+
+CREATE TABLE Matches (
+    match_id NUMERIC NOT NULL,
+    match_status STRING(MAX) NOT NULL,
+    start_time TIMESTAMP NOT NULL,
+    end_time TIMESTAMP NOT NULL,
+    sport FOREIGN KEY (sport_id) REFERENCES Sports(sport_id),
+    -- location FOREIGN KEY (resource_id) REFERENCES Sports(resource_id) DEFAULT NULL,
+) PRIMARY KEY(match_id)
+
+CREATE TABLE Sports (
+    sport_id NUMERIC NOT NULL,
+    team_size NUMERIC NOT NULL,
+    team_amount NUMERIC NOT NULL,
+    -- equipment_id NUMERIC NOT NULL
+)  PRIMARY KEY (sport_id)
+
+CREATE TABLE MatchmakingQueue (
+    queue_id NUMERIC NOT NULL,
+    player_id NUMERIC NOT NULL,
+    skill_level_range VARCHAR(255),
+    player FOREIGN KEY (player_id) REFERENCES Users(user_id)
+    sport FOREIGN KEY (sport_id) REFERENCES Sports(sport_id)
+    calendar FOREIGN KEY (calendar_id) REFERENCES calendar(calendar_id)
+) PRIMARY KEY(queue_id)
+
+CREATE TABLE Calendars (
+    calendar_id NUMERIC NOT NULL,
+    start_time TIMESTAMP NOT NULL,
+    end_time TIMESTAMP NOT NULL,
+    FOREIGN KEY (player_id) REFERENCES Users(user_id)
+) PRIMARY KEY(calendar_id)
+
+CREATE TABLE MatchPlayers (
+    match_player_id NUMERIC,
+    team NUMERIC,
+    status STRING(MAX),
+    match_id FOREIGN KEY (match_id) REFERENCES Matches(match_id),
+    player FOREIGN KEY (player_id) REFERENCES PlayerProfile(player_id) 
+) PRIMARY KEY(match_player_id)
+
+-- Create Reservations Table
+
+-- CREATE TABLE Reservations (
+--     reservation_id NUMERIC NOT NULL,
+--     resource_id NUMERIC NOT NULL,
+--     player_id NUMERIC NOT NULL,
+--     reservation_datetime DATETIME NOT NULL,
+--     billing_amount NUMERIC NOT NULL,
+--     payment_status STRING(MAX) NOT NULL,
+--     -- Other reservation-related information fields here
+--     FOREIGN KEY (resource_id) REFERENCES SportResources(resource_id),
+--     FOREIGN KEY (player_id) REFERENCES Users(user_id)
+-- ) PRIMARY KEY(reservation_id)
+
+-- Create Matchmaking Queue Table
+
+-- -- Create Billing History Table
+-- CREATE TABLE BillingHistory (
+--     billing_id NUMERIC NOT NULL,
+--     transaction_datetime DATETIME NOT NULL,
+--     transaction_type NUMERIC,
+--     -- Other billing-related information fields here
+--     FOREIGN KEY (user_id) REFERENCES Users(user_id),
+--     FOREIGN KEY (match_player_id) REFERENCES MatchPlayers(match_player_id),
+--     FOREIGN KEY (fee_id) REFERENCES MatchmakingFee(fee_id)
+-- ) PRIMARY KEY(billing_id)
+
+-- Create Matchmaking Fee Table
+-- CREATE TABLE MatchmakingFee (
+--     fee_id NUMERIC NOT NULL,
+--     percentage_fee NUMERIC NOT NULL,
+--     FOREIGN KEY(sport_id) REFERENCES Sports(sport_id)
+-- ) PRIMARY KEY(fee_id)
+
+-- Create Sport Resource Inventory Table
+-- CREATE TABLE SportResourceInventory (
+--     inventory_id NUMERIC NOT NULL,
+--     sport_selection VARCHAR(255),
+--     equipment_available BOOLEAN,
+--     shower_facility BOOLEAN,
+--     FOREIGN KEY (resource_id) REFERENCES SportResources(resource_id)
+-- ) PRIMARY KEY(inventory_id)
+
+    -- preferred_area STRING,
+
+-- This might not be necessary, because we have the information already available in the matchmaking queue table. 
+-- CREATE TABLE MatchmakingPreferences (
+--     preference_id NUMERIC NOT NULL,
+--     FOREIGN KEY (profile_id) REFERENCES PlayerProfile(profile_id)
+--     FOREIGN KEY (sport_id) REFERENCES Sports(sport_id)
+-- )     

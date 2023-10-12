@@ -154,6 +154,8 @@ The app generates revenue only through a 10% fee added to the sport-field reserv
   - Profile of which roles you can represent
 - Low supply of player roles
   - Discounted prices for games in very low demand roles
+- the optimized game location matching and resource-demand data
+  - [H3](https://h3geo.org/) Uber hexangon library
 - Critical amount of players in the beginning
   - Calendar-integrated queuing, suitable for people with routines
 
