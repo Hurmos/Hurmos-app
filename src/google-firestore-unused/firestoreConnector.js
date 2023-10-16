@@ -1,5 +1,5 @@
 var admin = require("firebase-admin");
-var serviceAccount = require("../secret/hurmos-firebase-credentials.json");
+var serviceAccount = require("../../secret/hurmos-firebase-credentials.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });

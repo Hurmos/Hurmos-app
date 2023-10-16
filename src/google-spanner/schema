@@ -1,19 +1,67 @@
-CREATE TABLE Users (
-    user_id NUMERIC NOT NULL,
-    username STRING(MAX) NOT NULL,
-    email STRING(MAX) NOT NULL,
-    password STRING(MAX) NOT NULL,
-    role STRING(MAX) NOT NULL,
-    home_location STRING(MAX),
-) PRIMARY KEY(used_id);
+CREATE TABLE Match_players (
+  player_id INT64 NOT NULL,
+  match_id INT64 NOT NULL,
+  team_number INT64 NOT NULL,
+  status_coming BOOL NOT NULL DEFAULT (FALSE),
+  rating_friendliness INT64 DEFAULT (5),
+) PRIMARY KEY(player_id, match_id);
 
-CREATE TABLE PlayerProfile (
-    profile_id NUMERIC NOT NULL,
-    user_id STRING(MAX) NOT NULL,
-    skill_level NUMERIC,
-    allowed_skill_range NUMERIC,
-    FOREIGN KEY (user_id) REFERENCES Users(user_id)
-) PRIMARY KEY (profile_id);
+CREATE TABLE Match_statuses (
+  id INT64 NOT NULL,
+  delay_amount INT64 DEFAULT (0),
+  has_ended BOOL DEFAULT (FALSE),
+) PRIMARY KEY(id);
+
+CREATE TABLE Matches (
+  id INT64 NOT NULL,
+  start_time TIMESTAMP NOT NULL,
+  end_time TIMESTAMP NOT NULL,
+  player_number INT64 NOT NULL DEFAULT (0),
+  winner_team INT64,
+  sport_id INT64 NOT NULL,
+  match_status_id INT64 NOT NULL,
+  FOREIGN KEY(match_status_id) REFERENCES Match_statuses(id),
+) PRIMARY KEY(id);
+
+ALTER TABLE Match_players ADD FOREIGN KEY(match_id) REFERENCES Matches(id);
+
+CREATE TABLE Passwords (
+  id INT64 NOT NULL,
+  accesstoken_google STRING(MAX),
+) PRIMARY KEY(id);
+
+CREATE TABLE Player_profiles (
+  id INT64 NOT NULL,
+  skill_range INT64 NOT NULL,
+) PRIMARY KEY(id);
+
+ALTER TABLE Match_players ADD FOREIGN KEY(player_id) REFERENCES Player_profiles(id);
+
+CREATE TABLE Player_skills (
+  player_id INT64 NOT NULL,
+  sport_id INT64 NOT NULL,
+  skill_level INT64 NOT NULL,
+  FOREIGN KEY(player_id) REFERENCES Player_profiles(id),
+) PRIMARY KEY(player_id, sport_id);
+
+CREATE TABLE Sports (
+  id INT64 NOT NULL,
+  team_amount INT64 NOT NULL,
+  team_size INT64 NOT NULL,
+) PRIMARY KEY(id);
+
+ALTER TABLE Matches ADD FOREIGN KEY(sport_id) REFERENCES Sports(id);
+
+ALTER TABLE Player_skills ADD FOREIGN KEY(sport_id) REFERENCES Sports(id);
+
+CREATE TABLE Users (
+  id INT64 NOT NULL,
+  email STRING(MAX),
+  home_location JSON,
+  created_at TIMESTAMP,
+  password_id INT64 NOT NULL,
+  FOREIGN KEY(password_id) REFERENCES Passwords(id),
+) PRIMARY KEY(id);
 
 -- CREATE TABLE ResourceOwners (
 --     owner_id NUMERIC NOT NULL,
@@ -32,45 +80,6 @@ CREATE TABLE PlayerProfile (
 --     FOREIGN KEY (owner_id) REFERENCES ResourceOwners(owner_id)
 -- ) PRIMARY KEY(resource_id)
 
-CREATE TABLE Matches (
-    match_id NUMERIC NOT NULL,
-    match_status STRING(MAX) NOT NULL,
-    start_time TIMESTAMP NOT NULL,
-    end_time TIMESTAMP NOT NULL,
-    sport FOREIGN KEY (sport_id) REFERENCES Sports(sport_id),
-    -- location FOREIGN KEY (resource_id) REFERENCES Sports(resource_id) DEFAULT NULL,
-) PRIMARY KEY(match_id)
-
-CREATE TABLE Sports (
-    sport_id NUMERIC NOT NULL,
-    team_size NUMERIC NOT NULL,
-    team_amount NUMERIC NOT NULL,
-    -- equipment_id NUMERIC NOT NULL
-)  PRIMARY KEY (sport_id)
-
-CREATE TABLE MatchmakingQueue (
-    queue_id NUMERIC NOT NULL,
-    player_id NUMERIC NOT NULL,
-    skill_level_range VARCHAR(255),
-    player FOREIGN KEY (player_id) REFERENCES Users(user_id)
-    sport FOREIGN KEY (sport_id) REFERENCES Sports(sport_id)
-    calendar FOREIGN KEY (calendar_id) REFERENCES calendar(calendar_id)
-) PRIMARY KEY(queue_id)
-
-CREATE TABLE Calendars (
-    calendar_id NUMERIC NOT NULL,
-    start_time TIMESTAMP NOT NULL,
-    end_time TIMESTAMP NOT NULL,
-    FOREIGN KEY (player_id) REFERENCES Users(user_id)
-) PRIMARY KEY(calendar_id)
-
-CREATE TABLE MatchPlayers (
-    match_player_id NUMERIC,
-    team NUMERIC,
-    status STRING(MAX),
-    match_id FOREIGN KEY (match_id) REFERENCES Matches(match_id),
-    player FOREIGN KEY (player_id) REFERENCES PlayerProfile(player_id) 
-) PRIMARY KEY(match_player_id)
 
 -- Create Reservations Table
 

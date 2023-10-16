@@ -158,6 +158,12 @@ The app generates revenue only through a 10% fee added to the sport-field reserv
   - [H3](https://h3geo.org/) Uber hexangon library
 - Critical amount of players in the beginning
   - Calendar-integrated queuing, suitable for people with routines
+- User fustration while listing sport skills
+  - Skill and physique similarities between sports. Player good in badminton will be ok in tennis.  
+- Extending amount of manual input of new ball-games from users
+  - AI generated sport listing
+- Game borigness for people coming to play new sports without any history and knowledge
+  - Basic information about the sport seen 
 
 ### Very important problems and solutions
 - How is the skill level signified to the player
